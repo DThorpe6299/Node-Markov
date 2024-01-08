@@ -10,7 +10,7 @@ function generateText(text) {
   /** read file and generate text from it. */
 
 function makeText(path) {
-fs.readFile(path, "utf8", function cb(err, data) {
+fs.readFile(path, "utf8", function readFile(err, data) {
     if (err) {
     console.error(`Cannot read file: ${path}: ${err}`);
     process.exit(1);
